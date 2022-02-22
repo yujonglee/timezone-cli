@@ -1,6 +1,6 @@
 # Timezone-CLI
 
-I build this for my personal use, because there's nothing suits my needs.
+WIP. Don't use it now.
 
 ![cli](https://user-images.githubusercontent.com/61503739/154101165-d9b1dd1a-8a7d-49b1-80a9-7409279b95fc.gif)
 
