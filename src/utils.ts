@@ -20,19 +20,13 @@ export const getDate = (timeString: string): Date => {
 
   const current = new Date();
 
-  const year = Number.isInteger(_year) ? _year : current.getFullYear();
-  const month = Number.isInteger(_month) ? _month : current.getMonth();
-  const date = Number.isInteger(_date) ? _date : current.getDate();
-  const hours = Number.isInteger(_hours) ? _hours : current.getHours();
-  const minutes = Number.isInteger(_minutes) ? _minutes : current.getMinutes();
+  const year = _year || current.getFullYear();
+  const month = _month || current.getMonth();
+  const date = _date || current.getDate();
+  const hours = _hours || current.getHours();
+  const minutes = _minutes || current.getMinutes();
 
-  return new Date(
-    year as number,
-    month as number,
-    date as number,
-    hours as number,
-    minutes as number,
-  );
+  return new Date(year, month, date, hours, minutes);
 };
 
 export default {};
